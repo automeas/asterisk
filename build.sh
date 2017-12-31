@@ -2,7 +2,11 @@
 
 VERSION=11.7.0
 
+
+
 sayAndDo () {
+apt-get install unixodbc unixodbc-dev libssl-dev libsrtp0 libsrtp0-dev libsqliteodbc uuid-dev libjansson-dev libxml2-dev
+
 	echo $@
 	eval $@
 	if [ $? -ne 0 ]
